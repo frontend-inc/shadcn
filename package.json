@@ -3,10 +3,10 @@
     "version": "0.0.1",
     "license": "MIT",
     "description": "Shadcn library designed for frontend.co",
-    "homepage": "https://github.com/frontend-inc/frontend-shadcn",
+    "homepage": "https://github.com/frontend-inc/shadcn",
     "repository": {
         "type": "git",
-        "url": "https://github.com/frontend-inc/frontend-shadcn"
+        "url": "https://github.com/frontend-inc/shadcn"
     },
     "keywords": [
         "react",
