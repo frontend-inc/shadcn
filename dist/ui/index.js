@@ -38,6 +38,7 @@ __exportStar(require("./form"), exports);
 __exportStar(require("./hover-card"), exports);
 __exportStar(require("./input-otp"), exports);
 __exportStar(require("./input"), exports);
+__exportStar(require("./label"), exports);
 __exportStar(require("./menubar"), exports);
 __exportStar(require("./navigation-menu"), exports);
 __exportStar(require("./pagination"), exports);

@@ -1,10 +1,10 @@
 declare const Drawer: {
-    ({ shouldScaleBackground, ...props }: React.ComponentProps<any>): any;
+    ({ shouldScaleBackground, ...props }: React.ComponentProps<typeof import("vaul").Root>): any;
     displayName: string;
 };
-declare const DrawerTrigger: any;
-declare const DrawerPortal: any;
-declare const DrawerClose: any;
+declare const DrawerTrigger: React.ForwardRefExoticComponent<any>;
+declare const DrawerPortal: typeof import("vaul").Portal;
+declare const DrawerClose: React.ForwardRefExoticComponent<any>;
 declare const DrawerOverlay: any;
 declare const DrawerContent: any;
 declare const DrawerHeader: {

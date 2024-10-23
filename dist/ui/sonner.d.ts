@@ -1,2 +1,2 @@
-declare const Toaster: ({ ...props }: React.ComponentProps<any>) => any;
+declare const Toaster: ({ ...props }: React.ComponentProps<(props: import("sonner").ToasterProps) => JSX.Element>) => any;
 export { Toaster };

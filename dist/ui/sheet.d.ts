@@ -1,7 +1,8 @@
-declare const Sheet: any;
-declare const SheetTrigger: any;
-declare const SheetClose: any;
-declare const SheetPortal: any;
+import * as SheetPrimitive from '@radix-ui/react-dialog';
+declare const Sheet: React.FC<SheetPrimitive.DialogProps>;
+declare const SheetTrigger: React.ForwardRefExoticComponent<any>;
+declare const SheetClose: React.ForwardRefExoticComponent<any>;
+declare const SheetPortal: React.FC<SheetPrimitive.DialogPortalProps>;
 declare const SheetOverlay: any;
 declare const SheetContent: any;
 declare const SheetHeader: {

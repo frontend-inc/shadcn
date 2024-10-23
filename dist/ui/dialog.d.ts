@@ -1,7 +1,8 @@
-declare const Dialog: any;
-declare const DialogTrigger: any;
-declare const DialogPortal: any;
-declare const DialogClose: any;
+import * as DialogPrimitive from '@radix-ui/react-dialog';
+declare const Dialog: React.FC<DialogPrimitive.DialogProps>;
+declare const DialogTrigger: React.ForwardRefExoticComponent<any>;
+declare const DialogPortal: React.FC<DialogPrimitive.DialogPortalProps>;
+declare const DialogClose: React.ForwardRefExoticComponent<any>;
 declare const DialogOverlay: any;
 declare const DialogContent: any;
 declare const DialogHeader: {

@@ -1,6 +1,7 @@
-declare const Select: any;
-declare const SelectGroup: any;
-declare const SelectValue: any;
+import * as SelectPrimitive from '@radix-ui/react-select';
+declare const Select: React.FC<SelectPrimitive.SelectProps>;
+declare const SelectGroup: React.ForwardRefExoticComponent<any>;
+declare const SelectValue: React.ForwardRefExoticComponent<any>;
 declare const SelectTrigger: any;
 declare const SelectScrollUpButton: any;
 declare const SelectScrollDownButton: any;

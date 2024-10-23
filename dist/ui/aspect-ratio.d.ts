@@ -1,2 +1,2 @@
-declare const AspectRatio: any;
+declare const AspectRatio: React.ForwardRefExoticComponent<any>;
 export { AspectRatio };

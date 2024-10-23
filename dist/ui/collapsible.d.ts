@@ -1,4 +1,4 @@
-declare const Collapsible: any;
-declare const CollapsibleTrigger: any;
-declare const CollapsibleContent: any;
+declare const Collapsible: React.ForwardRefExoticComponent<any>;
+declare const CollapsibleTrigger: React.ForwardRefExoticComponent<any>;
+declare const CollapsibleContent: React.ForwardRefExoticComponent<any>;
 export { Collapsible, CollapsibleTrigger, CollapsibleContent };

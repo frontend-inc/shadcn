@@ -1,5 +1,6 @@
 import * as React from 'react';
-declare const ToastProvider: any;
+import * as ToastPrimitives from '@radix-ui/react-toast';
+declare const ToastProvider: React.FC<ToastPrimitives.ToastProviderProps>;
 declare const ToastViewport: any;
 declare const Toast: any;
 declare const ToastAction: any;

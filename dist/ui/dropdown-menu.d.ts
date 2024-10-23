@@ -1,9 +1,10 @@
-declare const DropdownMenu: any;
-declare const DropdownMenuTrigger: any;
-declare const DropdownMenuGroup: any;
-declare const DropdownMenuPortal: any;
-declare const DropdownMenuSub: any;
-declare const DropdownMenuRadioGroup: any;
+import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
+declare const DropdownMenu: React.FC<DropdownMenuPrimitive.DropdownMenuProps>;
+declare const DropdownMenuTrigger: React.ForwardRefExoticComponent<any>;
+declare const DropdownMenuGroup: React.ForwardRefExoticComponent<any>;
+declare const DropdownMenuPortal: React.FC<DropdownMenuPrimitive.DropdownMenuPortalProps>;
+declare const DropdownMenuSub: React.FC<DropdownMenuPrimitive.DropdownMenuSubProps>;
+declare const DropdownMenuRadioGroup: React.ForwardRefExoticComponent<any>;
 declare const DropdownMenuSubTrigger: any;
 declare const DropdownMenuSubContent: any;
 declare const DropdownMenuContent: any;

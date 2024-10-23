@@ -1,8 +1,14 @@
-declare const MenubarMenu: any;
-declare const MenubarGroup: any;
-declare const MenubarPortal: any;
-declare const MenubarSub: any;
-declare const MenubarRadioGroup: any;
+import * as MenubarPrimitive from '@radix-ui/react-menubar';
+declare const MenubarMenu: {
+    (props: MenubarPrimitive.MenubarMenuProps & {
+        __scopeMenubar?: import("@radix-ui/react-context").Scope;
+    }): react_jsx_runtime.JSX.Element;
+    displayName: string;
+};
+declare const MenubarGroup: React.ForwardRefExoticComponent<any>;
+declare const MenubarPortal: React.FC<MenubarPrimitive.MenubarPortalProps>;
+declare const MenubarSub: React.FC<MenubarPrimitive.MenubarSubProps>;
+declare const MenubarRadioGroup: React.ForwardRefExoticComponent<any>;
 declare const Menubar: any;
 declare const MenubarTrigger: any;
 declare const MenubarSubTrigger: any;

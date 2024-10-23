@@ -83,7 +83,9 @@ var SheetContent = React.forwardRef(function (_a, ref) {
     var _b = _a.side, side = _b === void 0 ? 'right' : _b, _c = _a.iconColor, iconColor = _c === void 0 ? 'text-primary-foreground' : _c, className = _a.className, children = _a.children, props = __rest(_a, ["side", "iconColor", "className", "children"]);
     return (React.createElement(SheetPortal, null,
         React.createElement(SheetOverlay, null),
-        React.createElement(SheetPrimitive.Content, __assign({ ref: ref, className: (0, utils_1.cn)(sheetVariants({ side: side }), className) }, props),
+        React.createElement(SheetPrimitive.Content, __assign({ ref: ref, className: 
+            //@ts-ignore
+            (0, utils_1.cn)(sheetVariants({ side: side }), className) }, props),
             React.createElement(SheetPrimitive.Close, { className: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary" },
                 React.createElement(react_icons_1.Cross2Icon, { className: "h-5 w-5 text-foreground" }),
                 React.createElement("span", { className: "sr-only" }, "Close")),

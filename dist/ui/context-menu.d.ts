@@ -1,9 +1,10 @@
-declare const ContextMenu: any;
-declare const ContextMenuTrigger: any;
-declare const ContextMenuGroup: any;
-declare const ContextMenuPortal: any;
-declare const ContextMenuSub: any;
-declare const ContextMenuRadioGroup: any;
+import * as ContextMenuPrimitive from '@radix-ui/react-context-menu';
+declare const ContextMenu: React.FC<ContextMenuPrimitive.ContextMenuProps>;
+declare const ContextMenuTrigger: React.ForwardRefExoticComponent<any>;
+declare const ContextMenuGroup: React.ForwardRefExoticComponent<any>;
+declare const ContextMenuPortal: React.FC<ContextMenuPrimitive.ContextMenuPortalProps>;
+declare const ContextMenuSub: React.FC<ContextMenuPrimitive.ContextMenuSubProps>;
+declare const ContextMenuRadioGroup: React.ForwardRefExoticComponent<any>;
 declare const ContextMenuSubTrigger: any;
 declare const ContextMenuSubContent: any;
 declare const ContextMenuContent: any;
