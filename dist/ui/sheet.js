@@ -49,6 +49,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.SheetDescription = exports.SheetTitle = exports.SheetFooter = exports.SheetHeader = exports.SheetContent = exports.SheetClose = exports.SheetTrigger = exports.SheetOverlay = exports.SheetPortal = exports.Sheet = void 0;
 var React = __importStar(require("react"));
 var SheetPrimitive = __importStar(require("@radix-ui/react-dialog"));
+var react_icons_1 = require("@radix-ui/react-icons");
 var class_variance_authority_1 = require("class-variance-authority");
 var utils_1 = require("../lib/utils");
 var Sheet = SheetPrimitive.Root;
@@ -84,7 +85,11 @@ var SheetContent = React.forwardRef(function (_a, ref) {
         React.createElement(SheetOverlay, null),
         React.createElement(SheetPrimitive.Content, __assign({ ref: ref, className: 
             //@ts-ignore
-            (0, utils_1.cn)(sheetVariants({ side: side }), className) }, props), children)));
+            (0, utils_1.cn)(sheetVariants({ side: side }), className) }, props),
+            React.createElement(SheetPrimitive.Close, { className: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary" },
+                React.createElement(react_icons_1.Cross2Icon, { className: "h-5 w-5 text-foreground" }),
+                React.createElement("span", { className: "sr-only" }, "Close")),
+            children)));
 });
 exports.SheetContent = SheetContent;
 SheetContent.displayName = SheetPrimitive.Content.displayName;
