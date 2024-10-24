@@ -88,7 +88,7 @@ exports.DropdownMenuContent = DropdownMenuContent;
 DropdownMenuContent.displayName = DropdownMenuPrimitive.Content.displayName;
 var DropdownMenuItem = React.forwardRef(function (_a, ref) {
     var className = _a.className, inset = _a.inset, props = __rest(_a, ["className", "inset"]);
-    return (React.createElement(DropdownMenuPrimitive.Item, __assign({ ref: ref, className: (0, utils_1.cn)('relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50', inset && 'pl-8', className) }, props)));
+    return (React.createElement(DropdownMenuPrimitive.Item, __assign({ ref: ref, className: (0, utils_1.cn)('relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors text-foreground focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50', inset && 'pl-8', className) }, props)));
 });
 exports.DropdownMenuItem = DropdownMenuItem;
 DropdownMenuItem.displayName = DropdownMenuPrimitive.Item.displayName;
