@@ -1,4 +1,4 @@
-import * as PopoverPrimitive from '@radix-ui/react-popover';
+import * as PopoverPrimitive from "@radix-ui/react-popover";
 declare const Popover: React.FC<PopoverPrimitive.PopoverProps>;
 declare const PopoverTrigger: React.ForwardRefExoticComponent<any>;
 declare const PopoverAnchor: React.ForwardRefExoticComponent<any>;
