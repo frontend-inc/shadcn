@@ -1,4 +1,4 @@
-import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
+import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
 declare const DropdownMenu: React.FC<DropdownMenuPrimitive.DropdownMenuProps>;
 declare const DropdownMenuTrigger: React.ForwardRefExoticComponent<any>;
 declare const DropdownMenuGroup: React.ForwardRefExoticComponent<any>;
