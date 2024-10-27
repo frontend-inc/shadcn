@@ -62,7 +62,7 @@ var SheetPortal = SheetPrimitive.Portal;
 exports.SheetPortal = SheetPortal;
 var SheetOverlay = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement(SheetPrimitive.Overlay, __assign({ className: (0, utils_1.cn)('fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0', className) }, props, { ref: ref })));
+    return (React.createElement(SheetPrimitive.Overlay, __assign({ className: (0, utils_1.cn)('fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0', className) }, props, { ref: ref })));
 });
 exports.SheetOverlay = SheetOverlay;
 SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
