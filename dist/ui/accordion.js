@@ -62,7 +62,7 @@ AccordionItem.displayName = 'AccordionItem';
 var AccordionTrigger = React.forwardRef(function (_a, ref) {
     var className = _a.className, children = _a.children, props = __rest(_a, ["className", "children"]);
     return (React.createElement(AccordionPrimitive.Header, { className: "flex" },
-        React.createElement(AccordionPrimitive.Trigger, __assign({ ref: ref, className: (0, utils_1.cn)('flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline', className) }, props),
+        React.createElement(AccordionPrimitive.Trigger, __assign({ ref: ref, className: (0, utils_1.cn)('flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180', className) }, props),
             children,
             React.createElement(react_icons_1.ChevronDownIcon, { className: "h-6 w-6 shrink-0 text-muted-foreground transition-transform duration-200 [&[data-state=open]]:rotate-180" }))));
 });
