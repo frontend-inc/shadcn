@@ -55,7 +55,7 @@ var Checkbox = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
     return (React.createElement(CheckboxPrimitive.Root, __assign({ ref: ref, className: (0, utils_1.cn)("peer h-5 w-5 shrink-0 rounded-sm border-2 border-primary shadow focus-visible:outline-none focus-visible:ring-2 focus:ring-offset-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-background data-[state=checked]:text-primary-foreground", className) }, props),
         React.createElement(CheckboxPrimitive.Indicator, { className: (0, utils_1.cn)("flex items-center justify-center text-foreground") },
-            React.createElement(react_icons_1.CheckIcon, { className: "h-5 w-5" }))));
+            React.createElement(react_icons_1.CheckIcon, { className: "h-6 w-6" }))));
 });
 exports.Checkbox = Checkbox;
 Checkbox.displayName = CheckboxPrimitive.Root.displayName;
