@@ -50,6 +50,7 @@ __exportStar(require("./scroll-area"), exports);
 __exportStar(require("./select"), exports);
 __exportStar(require("./separator"), exports);
 __exportStar(require("./sheet"), exports);
+__exportStar(require("./sidebar"), exports);
 __exportStar(require("./skeleton"), exports);
 __exportStar(require("./slider"), exports);
 __exportStar(require("./sonner"), exports);

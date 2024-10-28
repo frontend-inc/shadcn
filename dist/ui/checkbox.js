@@ -53,7 +53,7 @@ var react_icons_1 = require("@radix-ui/react-icons");
 var utils_1 = require("../lib/utils");
 var Checkbox = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement(CheckboxPrimitive.Root, __assign({ ref: ref, className: (0, utils_1.cn)("peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground", className) }, props),
+    return (React.createElement(CheckboxPrimitive.Root, __assign({ ref: ref, className: (0, utils_1.cn)("peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-background data-[state=checked]:text-primary-foreground", className) }, props),
         React.createElement(CheckboxPrimitive.Indicator, { className: (0, utils_1.cn)("flex items-center justify-center text-foreground") },
             React.createElement(react_icons_1.CheckIcon, { className: "h-4 w-4" }))));
 });
