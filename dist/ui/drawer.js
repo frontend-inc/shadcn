@@ -71,7 +71,7 @@ DrawerOverlay.displayName = vaul_1.Drawer.Overlay.displayName;
 var DrawerContent = React.forwardRef(function (_a, ref) {
     var className = _a.className, children = _a.children, props = __rest(_a, ["className", "children"]);
     return (React.createElement(DrawerPortal, null,
-        React.createElement(DrawerOverlay, null),
+        React.createElement(DrawerOverlay, { className: "bg-black/50" }),
         React.createElement(vaul_1.Drawer.Content, __assign({ ref: ref, className: (0, utils_1.cn)('fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col rounded-t-[10px] border bg-background', className) }, props),
             React.createElement("div", { className: "mx-auto mt-4 h-2 w-[100px] rounded-full bg-muted" }),
             children)));
