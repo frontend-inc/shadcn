@@ -64,7 +64,7 @@ var AccordionTrigger = React.forwardRef(function (_a, ref) {
     return (React.createElement(AccordionPrimitive.Header, { className: "flex" },
         React.createElement(AccordionPrimitive.Trigger, __assign({ ref: ref, className: (0, utils_1.cn)("flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180", className) }, props),
             children,
-            React.createElement(react_icons_1.ChevronDownIcon, { className: "h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" }))));
+            React.createElement(react_icons_1.ChevronDownIcon, { className: "h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-200" }))));
 });
 exports.AccordionTrigger = AccordionTrigger;
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
