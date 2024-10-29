@@ -55,23 +55,23 @@ var Accordion = AccordionPrimitive.Root;
 exports.Accordion = Accordion;
 var AccordionItem = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement(AccordionPrimitive.Item, __assign({ ref: ref, className: (0, utils_1.cn)('border-b', className) }, props)));
+    return (React.createElement(AccordionPrimitive.Item, __assign({ ref: ref, className: (0, utils_1.cn)("border-b", className) }, props)));
 });
 exports.AccordionItem = AccordionItem;
-AccordionItem.displayName = 'AccordionItem';
+AccordionItem.displayName = "AccordionItem";
 var AccordionTrigger = React.forwardRef(function (_a, ref) {
     var className = _a.className, children = _a.children, props = __rest(_a, ["className", "children"]);
     return (React.createElement(AccordionPrimitive.Header, { className: "flex" },
-        React.createElement(AccordionPrimitive.Trigger, __assign({ ref: ref, className: (0, utils_1.cn)('flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180', className) }, props),
+        React.createElement(AccordionPrimitive.Trigger, __assign({ ref: ref, className: (0, utils_1.cn)("flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180", className) }, props),
             children,
-            React.createElement(react_icons_1.ChevronDownIcon, { className: "h-6 w-6 shrink-0 text-muted-foreground transition-transform duration-200 [&[data-state=open]]:rotate-180" }))));
+            React.createElement(react_icons_1.ChevronDownIcon, { className: "h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" }))));
 });
 exports.AccordionTrigger = AccordionTrigger;
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 var AccordionContent = React.forwardRef(function (_a, ref) {
     var className = _a.className, children = _a.children, props = __rest(_a, ["className", "children"]);
     return (React.createElement(AccordionPrimitive.Content, __assign({ ref: ref, className: "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" }, props),
-        React.createElement("div", { className: (0, utils_1.cn)('pb-4 pt-0', className) }, children)));
+        React.createElement("div", { className: (0, utils_1.cn)("pb-4 pt-0", className) }, children)));
 });
 exports.AccordionContent = AccordionContent;
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;

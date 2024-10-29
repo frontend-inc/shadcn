@@ -1,6 +1,6 @@
 {
     "name": "frontend-shadcn",
-    "version": "0.0.33",
+    "version": "0.0.34",
     "license": "MIT",
     "description": "Shadcn library designed for frontend.co",
     "homepage": "https://github.com/frontend-inc/shadcn",
@@ -110,7 +110,7 @@
         "tailwind-merge": "^2.5.4",
         "tailwindcss-animate": "^1.0.7",
         "use-debounce": "^10.0.0",
-        "vaul": "^1.0.0"
+        "vaul": "^1.1.1"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.20",

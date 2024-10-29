@@ -54,7 +54,7 @@ var utils_1 = require("../lib/utils");
 var dialog_1 = require("../ui/dialog");
 var Command = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement(cmdk_1.Command, __assign({ ref: ref, className: (0, utils_1.cn)('flex h-full w-full flex-col overflow-hidden rounded-md bg-popover text-popover-foreground', className) }, props)));
+    return (React.createElement(cmdk_1.Command, __assign({ ref: ref, className: (0, utils_1.cn)("flex h-full w-full flex-col overflow-hidden rounded-md bg-popover text-popover-foreground", className) }, props)));
 });
 exports.Command = Command;
 Command.displayName = cmdk_1.Command.displayName;
@@ -68,14 +68,14 @@ exports.CommandDialog = CommandDialog;
 var CommandInput = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
     return (React.createElement("div", { className: "flex items-center border-b px-3", "cmdk-input-wrapper": "" },
-        React.createElement(react_icons_1.MagnifyingGlassIcon, { className: "mr-2 h-4 w-4 shrink-0 opacity-50" }),
-        React.createElement(cmdk_1.Command.Input, __assign({ ref: ref, className: (0, utils_1.cn)('flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50', className) }, props))));
+        React.createElement(react_icons_1.MagnifyingGlassIcon, { className: "mr-2 h-5 w-5 shrink-0 opacity-50" }),
+        React.createElement(cmdk_1.Command.Input, __assign({ ref: ref, className: (0, utils_1.cn)("flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50", className) }, props))));
 });
 exports.CommandInput = CommandInput;
 CommandInput.displayName = cmdk_1.Command.Input.displayName;
 var CommandList = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement(cmdk_1.Command.List, __assign({ ref: ref, className: (0, utils_1.cn)('max-h-[300px] overflow-y-auto overflow-x-hidden', className) }, props)));
+    return (React.createElement(cmdk_1.Command.List, __assign({ ref: ref, className: (0, utils_1.cn)("max-h-[300px] overflow-y-auto overflow-x-hidden", className) }, props)));
 });
 exports.CommandList = CommandList;
 CommandList.displayName = cmdk_1.Command.List.displayName;
@@ -84,25 +84,25 @@ exports.CommandEmpty = CommandEmpty;
 CommandEmpty.displayName = cmdk_1.Command.Empty.displayName;
 var CommandGroup = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement(cmdk_1.Command.Group, __assign({ ref: ref, className: (0, utils_1.cn)('overflow-hidden p-1 text-foreground [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground', className) }, props)));
+    return (React.createElement(cmdk_1.Command.Group, __assign({ ref: ref, className: (0, utils_1.cn)("overflow-hidden p-1 text-foreground [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground", className) }, props)));
 });
 exports.CommandGroup = CommandGroup;
 CommandGroup.displayName = cmdk_1.Command.Group.displayName;
 var CommandSeparator = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement(cmdk_1.Command.Separator, __assign({ ref: ref, className: (0, utils_1.cn)('-mx-1 h-px bg-border', className) }, props)));
+    return (React.createElement(cmdk_1.Command.Separator, __assign({ ref: ref, className: (0, utils_1.cn)("-mx-1 h-px bg-border", className) }, props)));
 });
 exports.CommandSeparator = CommandSeparator;
 CommandSeparator.displayName = cmdk_1.Command.Separator.displayName;
 var CommandItem = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement(cmdk_1.Command.Item, __assign({ ref: ref, className: (0, utils_1.cn)('relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50', className) }, props)));
+    return (React.createElement(cmdk_1.Command.Item, __assign({ ref: ref, className: (0, utils_1.cn)("relative flex cursor-default gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0", className) }, props)));
 });
 exports.CommandItem = CommandItem;
 CommandItem.displayName = cmdk_1.Command.Item.displayName;
 var CommandShortcut = function (_a) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement("span", __assign({ className: (0, utils_1.cn)('ml-auto text-xs tracking-widest text-muted-foreground', className) }, props)));
+    return (React.createElement("span", __assign({ className: (0, utils_1.cn)("ml-auto text-xs tracking-widest text-muted-foreground", className) }, props)));
 };
 exports.CommandShortcut = CommandShortcut;
-CommandShortcut.displayName = 'CommandShortcut';
+CommandShortcut.displayName = "CommandShortcut";

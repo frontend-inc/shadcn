@@ -1,4 +1,4 @@
-import { type DialogProps } from '@radix-ui/react-dialog';
+import { type DialogProps } from "@radix-ui/react-dialog";
 declare const Command: any;
 interface CommandDialogProps extends DialogProps {
 }
