@@ -141,7 +141,7 @@ var CarouselPrevious = React.forwardRef(function (_a, ref) {
     var className = _a.className, _b = _a.variant, variant = _b === void 0 ? 'outline' : _b, _c = _a.size, size = _c === void 0 ? 'icon' : _c, props = __rest(_a, ["className", "variant", "size"]);
     var _d = useCarousel(), orientation = _d.orientation, scrollPrev = _d.scrollPrev, canScrollPrev = _d.canScrollPrev;
     return (React.createElement(button_1.Button, __assign({ ref: ref, variant: variant, size: size, className: (0, utils_1.cn)('absolute  h-8 w-8 rounded-full', orientation === 'horizontal'
-            ? '-left-12 top-1/2 -translate-y-1/2'
+            ? 'right-[48px] top-0 -translate-y-[40px]'
             : '-top-12 left-1/2 -translate-x-1/2 rotate-90', className), disabled: !canScrollPrev, onClick: scrollPrev }, props),
         React.createElement(react_icons_1.ChevronLeftIcon, { className: "h-5 w-5 text-foreground" }),
         React.createElement("span", { className: "sr-only" }, "Previous slide")));
@@ -152,7 +152,7 @@ var CarouselNext = React.forwardRef(function (_a, ref) {
     var className = _a.className, _b = _a.variant, variant = _b === void 0 ? 'outline' : _b, _c = _a.size, size = _c === void 0 ? 'icon' : _c, props = __rest(_a, ["className", "variant", "size"]);
     var _d = useCarousel(), orientation = _d.orientation, scrollNext = _d.scrollNext, canScrollNext = _d.canScrollNext;
     return (React.createElement(button_1.Button, __assign({ ref: ref, variant: variant, size: size, className: (0, utils_1.cn)('absolute h-8 w-8 rounded-full', orientation === 'horizontal'
-            ? '-right-12 top-1/2 -translate-y-1/2'
+            ? 'right-0 top-0 -translate-y-[40px]'
             : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90', className), disabled: !canScrollNext, onClick: scrollNext }, props),
         React.createElement(react_icons_1.ChevronRightIcon, { className: "h-5 w-5 text-foreground" }),
         React.createElement("span", { className: "sr-only" }, "Next slide")));
