@@ -63,3 +63,4 @@ __exportStar(require("./toast"), exports);
 __exportStar(require("./toggle-group"), exports);
 __exportStar(require("./toggle"), exports);
 __exportStar(require("./tooltip"), exports);
+__exportStar(require("./vaul-wrapper"), exports);
