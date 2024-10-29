@@ -143,7 +143,7 @@ var CarouselPrevious = React.forwardRef(function (_a, ref) {
     return (React.createElement(button_1.Button, __assign({ ref: ref, variant: variant, size: size, className: (0, utils_1.cn)('absolute  h-8 w-8 rounded-full', orientation === 'horizontal'
             ? '-left-12 top-1/2 -translate-y-1/2'
             : '-top-12 left-1/2 -translate-x-1/2 rotate-90', className), disabled: !canScrollPrev, onClick: scrollPrev }, props),
-        React.createElement(react_icons_1.ArrowLeftIcon, { className: "h-4 w-4" }),
+        React.createElement(react_icons_1.ChevronLeftIcon, { className: "h-5 w-5 text-foreground" }),
         React.createElement("span", { className: "sr-only" }, "Previous slide")));
 });
 exports.CarouselPrevious = CarouselPrevious;
@@ -154,7 +154,7 @@ var CarouselNext = React.forwardRef(function (_a, ref) {
     return (React.createElement(button_1.Button, __assign({ ref: ref, variant: variant, size: size, className: (0, utils_1.cn)('absolute h-8 w-8 rounded-full', orientation === 'horizontal'
             ? '-right-12 top-1/2 -translate-y-1/2'
             : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90', className), disabled: !canScrollNext, onClick: scrollNext }, props),
-        React.createElement(react_icons_1.ArrowRightIcon, { className: "h-4 w-4" }),
+        React.createElement(react_icons_1.ChevronRightIcon, { className: "h-5 w-5 text-foreground" }),
         React.createElement("span", { className: "sr-only" }, "Next slide")));
 });
 exports.CarouselNext = CarouselNext;
