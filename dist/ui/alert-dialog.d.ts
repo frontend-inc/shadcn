@@ -1,4 +1,4 @@
-import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
+import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog";
 declare const AlertDialog: React.FC<AlertDialogPrimitive.AlertDialogProps>;
 declare const AlertDialogTrigger: React.ForwardRefExoticComponent<any>;
 declare const AlertDialogPortal: React.FC<AlertDialogPrimitive.AlertDialogPortalProps>;
