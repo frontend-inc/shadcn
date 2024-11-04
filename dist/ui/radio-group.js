@@ -48,7 +48,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RadioGroupItem = exports.RadioGroup = void 0;
 var React = __importStar(require("react"));
-var react_icons_1 = require("@radix-ui/react-icons");
+var lucide_react_1 = require("lucide-react");
 var RadioGroupPrimitive = __importStar(require("@radix-ui/react-radio-group"));
 var utils_1 = require("../lib/utils");
 var RadioGroup = React.forwardRef(function (_a, ref) {
@@ -61,7 +61,7 @@ var RadioGroupItem = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
     return (React.createElement(RadioGroupPrimitive.Item, __assign({ ref: ref, className: (0, utils_1.cn)('aspect-square h-5 w-5 rounded-full border border-primary text-primary shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50', className) }, props),
         React.createElement(RadioGroupPrimitive.Indicator, { className: "flex items-center justify-center" },
-            React.createElement(react_icons_1.CircleIcon, { className: "h-3 w-3 fill-primary" }))));
+            React.createElement(lucide_react_1.Circle, { className: "h-3 w-3 fill-primary" }))));
 });
 exports.RadioGroupItem = RadioGroupItem;
 RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
