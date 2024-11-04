@@ -59,9 +59,9 @@ exports.RadioGroup = RadioGroup;
 RadioGroup.displayName = RadioGroupPrimitive.Root.displayName;
 var RadioGroupItem = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement(RadioGroupPrimitive.Item, __assign({ ref: ref, className: (0, utils_1.cn)('aspect-square h-4 w-4 rounded-full border border-primary text-primary shadow focus:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50', className) }, props),
+    return (React.createElement(RadioGroupPrimitive.Item, __assign({ ref: ref, className: (0, utils_1.cn)('aspect-square h-5 w-5 rounded-full border border-primary text-primary shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50', className) }, props),
         React.createElement(RadioGroupPrimitive.Indicator, { className: "flex items-center justify-center" },
-            React.createElement(react_icons_1.CheckIcon, { className: "h-3.5 w-3.5 fill-primary" }))));
+            React.createElement(react_icons_1.CircleIcon, { className: "h-3 w-3 fill-primary" }))));
 });
 exports.RadioGroupItem = RadioGroupItem;
 RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
