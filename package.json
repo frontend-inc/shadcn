@@ -1,6 +1,6 @@
 {
     "name": "frontend-shadcn",
-    "version": "0.0.54",
+    "version": "0.0.55",
     "license": "MIT",
     "description": "Shadcn library designed for frontend.co",
     "homepage": "https://github.com/frontend-inc/shadcn",
@@ -120,7 +120,7 @@
         "babel-preset-stage-2": "^6.24.1",
         "class-variance-authority": "^0.7.0",
         "cookies-next": "^2.1.1",
-        "next": "^14.0.4",
+        "next": "15.0.3",
         "next-images": "^1.8.5",
         "postcss": "^8.4.47",
         "react": "^17.0.1 || ^18.0.0",
