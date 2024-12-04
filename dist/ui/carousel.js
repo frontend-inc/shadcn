@@ -140,10 +140,10 @@ CarouselItem.displayName = "CarouselItem";
 var CarouselPrevious = React.forwardRef(function (_a, ref) {
     var className = _a.className, _b = _a.variant, variant = _b === void 0 ? "outline" : _b, _c = _a.size, size = _c === void 0 ? "icon" : _c, props = __rest(_a, ["className", "variant", "size"]);
     var _d = useCarousel(), orientation = _d.orientation, scrollPrev = _d.scrollPrev, canScrollPrev = _d.canScrollPrev;
-    return (React.createElement(button_1.Button, __assign({ ref: ref, variant: variant, size: size, className: (0, utils_1.cn)("absolute h-12 w-12 rounded-full", orientation === "horizontal"
+    return (React.createElement(button_1.Button, __assign({ ref: ref, variant: variant, size: size, className: (0, utils_1.cn)("absolute h-10 w-10 rounded-lg", orientation === "horizontal"
             ? "-left-12 top-1/2 -translate-y-1/2"
             : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className), disabled: !canScrollPrev, onClick: scrollPrev }, props),
-        React.createElement(lucide_react_1.ChevronLeft, { className: "h-8 w-8" }),
+        React.createElement(lucide_react_1.ChevronLeft, { className: "h-6 w-6" }),
         React.createElement("span", { className: "sr-only" }, "Previous slide")));
 });
 exports.CarouselPrevious = CarouselPrevious;
@@ -151,10 +151,10 @@ CarouselPrevious.displayName = "CarouselPrevious";
 var CarouselNext = React.forwardRef(function (_a, ref) {
     var className = _a.className, _b = _a.variant, variant = _b === void 0 ? "outline" : _b, _c = _a.size, size = _c === void 0 ? "icon" : _c, props = __rest(_a, ["className", "variant", "size"]);
     var _d = useCarousel(), orientation = _d.orientation, scrollNext = _d.scrollNext, canScrollNext = _d.canScrollNext;
-    return (React.createElement(button_1.Button, __assign({ ref: ref, variant: variant, size: size, className: (0, utils_1.cn)("absolute h-12 w-12 rounded-full", orientation === "horizontal"
+    return (React.createElement(button_1.Button, __assign({ ref: ref, variant: variant, size: size, className: (0, utils_1.cn)("absolute h-10 w-10 rounded-lg", orientation === "horizontal"
             ? "-right-12 top-1/2 -translate-y-1/2"
             : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className), disabled: !canScrollNext, onClick: scrollNext }, props),
-        React.createElement(lucide_react_1.ChevronRight, { className: "h-8 w-8" }),
+        React.createElement(lucide_react_1.ChevronRight, { className: "h-6 w-6" }),
         React.createElement("span", { className: "sr-only" }, "Next slide")));
 });
 exports.CarouselNext = CarouselNext;
