@@ -1,4 +1,4 @@
-import { type UseEmblaCarouselType } from 'embla-carousel-react';
+import { type UseEmblaCarouselType } from "embla-carousel-react";
 type CarouselApi = UseEmblaCarouselType[1];
 declare const Carousel: any;
 declare const CarouselContent: any;
