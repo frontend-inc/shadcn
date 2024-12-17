@@ -49,15 +49,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Checkbox = void 0;
 var React = __importStar(require("react"));
 var CheckboxPrimitive = __importStar(require("@radix-ui/react-checkbox"));
-var lucide_react_1 = require("lucide-react");
+var react_icons_1 = require("@radix-ui/react-icons");
 var utils_1 = require("../lib/utils");
 var Checkbox = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    var _b = React.useState(false), isPressed = _b[0], setIsPressed = _b[1];
-    return (React.createElement(CheckboxPrimitive.Root, __assign({ ref: ref, className: (0, utils_1.cn)("peer relative h-5 w-5 shrink-0 rounded-sm border-2 border-default-200 transition-all", "data-[state=checked]:bg-primary data-[state=checked]:border-primary", "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2", "disabled:cursor-not-allowed disabled:opacity-50", className), onMouseDown: function () { return setIsPressed(true); }, onMouseUp: function () { return setIsPressed(false); }, onMouseLeave: function () { return setIsPressed(false); } }, props),
-        React.createElement(CheckboxPrimitive.Indicator, { className: (0, utils_1.cn)("flex items-center justify-center text-primary-foreground") },
-            React.createElement(lucide_react_1.Check, { className: "h-3 w-3 transition-transform duration-200 ease-in-out" })),
-        React.createElement("span", { className: (0, utils_1.cn)("absolute inset-0 rounded-sm bg-primary/20 scale-0 transition-transform duration-300", isPressed && "scale-100") })));
+    return (React.createElement(CheckboxPrimitive.Root, __assign({ ref: ref, className: (0, utils_1.cn)("peer h-5 w-5 shrink-0 rounded-sm border-2 border-primary shadow focus-visible:outline-none focus-visible:ring-2 focus:ring-offset-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-background data-[state=checked]:text-primary-foreground", className) }, props),
+        React.createElement(CheckboxPrimitive.Indicator, { className: (0, utils_1.cn)("flex items-center justify-center text-foreground") },
+            React.createElement(react_icons_1.CheckIcon, { className: "h-5 w-5" }))));
 });
 exports.Checkbox = Checkbox;
 Checkbox.displayName = CheckboxPrimitive.Root.displayName;
