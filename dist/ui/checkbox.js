@@ -53,11 +53,9 @@ var lucide_react_1 = require("lucide-react");
 var utils_1 = require("../lib/utils");
 var Checkbox = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    var _b = React.useState(false), isPressed = _b[0], setIsPressed = _b[1];
-    return (React.createElement(CheckboxPrimitive.Root, __assign({ ref: ref, className: (0, utils_1.cn)("peer relative h-5 w-5 shrink-0 rounded-sm border-2 border-default-200 transition-all", "data-[state=checked]:bg-primary data-[state=checked]:border-primary", "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2", "disabled:cursor-not-allowed disabled:opacity-50", className), onMouseDown: function () { return setIsPressed(true); }, onMouseUp: function () { return setIsPressed(false); }, onMouseLeave: function () { return setIsPressed(false); } }, props),
+    return (React.createElement(CheckboxPrimitive.Root, __assign({ ref: ref, className: (0, utils_1.cn)("peer relative h-5 w-5 shrink-0 rounded-sm border-2 border-default-200 transition-all", "data-[state=checked]:bg-primary data-[state=checked]:border-primary", "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2", "disabled:cursor-not-allowed disabled:opacity-50", "after:content-[''] after:block after:absolute after:inset-0 after:rounded-sm after:bg-primary/20 after:scale-0 after:transition-transform after:duration-300", "active:after:scale-100", className) }, props),
         React.createElement(CheckboxPrimitive.Indicator, { className: (0, utils_1.cn)("flex items-center justify-center text-primary-foreground") },
-            React.createElement(lucide_react_1.Check, { className: "h-3 w-3 transition-transform duration-200 ease-in-out" })),
-        React.createElement("span", { className: (0, utils_1.cn)("absolute inset-0 bg-primary/20 scale-0 transition-transform duration-300", isPressed && "rounded-sm scale-100") })));
+            React.createElement(lucide_react_1.Check, { className: "h-3 w-3 transition-transform duration-200 ease-in-out" }))));
 });
 exports.Checkbox = Checkbox;
 Checkbox.displayName = CheckboxPrimitive.Root.displayName;
