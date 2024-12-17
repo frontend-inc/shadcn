@@ -57,7 +57,7 @@ var Checkbox = React.forwardRef(function (_a, ref) {
     return (React.createElement(CheckboxPrimitive.Root, __assign({ ref: ref, className: (0, utils_1.cn)("peer relative h-5 w-5 shrink-0 rounded-sm border-2 border-default-200 transition-all", "data-[state=checked]:bg-primary data-[state=checked]:border-primary", "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2", "disabled:cursor-not-allowed disabled:opacity-50", className), onMouseDown: function () { return setIsPressed(true); }, onMouseUp: function () { return setIsPressed(false); }, onMouseLeave: function () { return setIsPressed(false); } }, props),
         React.createElement(CheckboxPrimitive.Indicator, { className: (0, utils_1.cn)("flex items-center justify-center text-primary-foreground") },
             React.createElement(lucide_react_1.Check, { className: "h-3 w-3 transition-transform duration-200 ease-in-out" })),
-        React.createElement("span", { className: (0, utils_1.cn)("absolute inset-0 rounded-sm bg-primary/20 scale-0 transition-transform duration-300", isPressed && "scale-100") })));
+        React.createElement("span", { className: (0, utils_1.cn)("absolute inset-0 bg-primary/20 scale-0 transition-transform duration-300", isPressed && "rounded-sm scale-100") })));
 });
 exports.Checkbox = Checkbox;
 Checkbox.displayName = CheckboxPrimitive.Root.displayName;

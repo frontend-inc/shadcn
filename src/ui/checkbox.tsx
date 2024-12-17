@@ -33,8 +33,8 @@ const Checkbox = React.forwardRef<
       </CheckboxPrimitive.Indicator>
       <span 
         className={cn(
-          "absolute inset-0 rounded-sm bg-primary/20 scale-0 transition-transform duration-300",
-          isPressed && "scale-100"
+          "absolute inset-0 bg-primary/20 scale-0 transition-transform duration-300",
+          isPressed && "rounded-sm scale-100"
         )}
       />
     </CheckboxPrimitive.Root>
