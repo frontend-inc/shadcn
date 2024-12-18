@@ -96,7 +96,7 @@ exports.CommandSeparator = CommandSeparator;
 CommandSeparator.displayName = cmdk_1.Command.Separator.displayName;
 var CommandItem = React.forwardRef(function (_a, ref) {
     var className = _a.className, props = __rest(_a, ["className"]);
-    return (React.createElement(cmdk_1.Command.Item, __assign({ ref: ref, className: (0, utils_1.cn)("relative flex cursor-default gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0", className) }, props)));
+    return (React.createElement(cmdk_1.Command.Item, __assign({ ref: ref, className: (0, utils_1.cn)("pointer-events-auto relative flex cursor-default gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0", className) }, props)));
 });
 exports.CommandItem = CommandItem;
 CommandItem.displayName = cmdk_1.Command.Item.displayName;
