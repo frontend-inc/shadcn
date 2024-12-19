@@ -49,7 +49,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DropdownMenuRadioGroup = exports.DropdownMenuSubTrigger = exports.DropdownMenuSubContent = exports.DropdownMenuSub = exports.DropdownMenuPortal = exports.DropdownMenuGroup = exports.DropdownMenuShortcut = exports.DropdownMenuSeparator = exports.DropdownMenuLabel = exports.DropdownMenuRadioItem = exports.DropdownMenuCheckboxItem = exports.DropdownMenuItem = exports.DropdownMenuContent = exports.DropdownMenuTrigger = exports.DropdownMenu = void 0;
 var React = __importStar(require("react"));
 var DropdownMenuPrimitive = __importStar(require("@radix-ui/react-dropdown-menu"));
-var react_icons_1 = require("@radix-ui/react-icons");
+var lucide_react_1 = require("lucide-react");
 var utils_1 = require("../lib/utils");
 var DropdownMenu = DropdownMenuPrimitive.Root;
 exports.DropdownMenu = DropdownMenu;
@@ -67,7 +67,7 @@ var DropdownMenuSubTrigger = React.forwardRef(function (_a, ref) {
     var className = _a.className, inset = _a.inset, children = _a.children, props = __rest(_a, ["className", "inset", "children"]);
     return (React.createElement(DropdownMenuPrimitive.SubTrigger, __assign({ ref: ref, className: (0, utils_1.cn)("flex cursor-default gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent data-[state=open]:bg-accent [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0", inset && "pl-8", className) }, props),
         children,
-        React.createElement(react_icons_1.ChevronRightIcon, { className: "ml-auto" })));
+        React.createElement(lucide_react_1.ChevronRight, { className: "ml-auto" })));
 });
 exports.DropdownMenuSubTrigger = DropdownMenuSubTrigger;
 DropdownMenuSubTrigger.displayName =
@@ -82,13 +82,13 @@ DropdownMenuSubContent.displayName =
 var DropdownMenuContent = React.forwardRef(function (_a, ref) {
     var className = _a.className, _b = _a.sideOffset, sideOffset = _b === void 0 ? 4 : _b, props = __rest(_a, ["className", "sideOffset"]);
     return (React.createElement(DropdownMenuPrimitive.Portal, null,
-        React.createElement(DropdownMenuPrimitive.Content, __assign({ ref: ref, sideOffset: sideOffset, className: (0, utils_1.cn)("z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md", "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2", className) }, props))));
+        React.createElement(DropdownMenuPrimitive.Content, __assign({ ref: ref, sideOffset: sideOffset, className: (0, utils_1.cn)("z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2", className) }, props))));
 });
 exports.DropdownMenuContent = DropdownMenuContent;
 DropdownMenuContent.displayName = DropdownMenuPrimitive.Content.displayName;
 var DropdownMenuItem = React.forwardRef(function (_a, ref) {
     var className = _a.className, inset = _a.inset, props = __rest(_a, ["className", "inset"]);
-    return (React.createElement(DropdownMenuPrimitive.Item, __assign({ ref: ref, className: (0, utils_1.cn)("relative flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&>svg]:size-4 [&>svg]:shrink-0", inset && "pl-8", className) }, props)));
+    return (React.createElement(DropdownMenuPrimitive.Item, __assign({ ref: ref, className: (0, utils_1.cn)("relative flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0", inset && "pl-8", className) }, props)));
 });
 exports.DropdownMenuItem = DropdownMenuItem;
 DropdownMenuItem.displayName = DropdownMenuPrimitive.Item.displayName;
@@ -97,7 +97,7 @@ var DropdownMenuCheckboxItem = React.forwardRef(function (_a, ref) {
     return (React.createElement(DropdownMenuPrimitive.CheckboxItem, __assign({ ref: ref, className: (0, utils_1.cn)("relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50", className), checked: checked }, props),
         React.createElement("span", { className: "absolute left-2 flex h-3.5 w-3.5 items-center justify-center" },
             React.createElement(DropdownMenuPrimitive.ItemIndicator, null,
-                React.createElement(react_icons_1.CheckIcon, { className: "h-5 w-5" }))),
+                React.createElement(lucide_react_1.Check, { className: "h-4 w-4" }))),
         children));
 });
 exports.DropdownMenuCheckboxItem = DropdownMenuCheckboxItem;
@@ -108,7 +108,7 @@ var DropdownMenuRadioItem = React.forwardRef(function (_a, ref) {
     return (React.createElement(DropdownMenuPrimitive.RadioItem, __assign({ ref: ref, className: (0, utils_1.cn)("relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50", className) }, props),
         React.createElement("span", { className: "absolute left-2 flex h-3.5 w-3.5 items-center justify-center" },
             React.createElement(DropdownMenuPrimitive.ItemIndicator, null,
-                React.createElement(react_icons_1.DotFilledIcon, { className: "h-4 w-4 fill-current" }))),
+                React.createElement(lucide_react_1.Circle, { className: "h-2 w-2 fill-current" }))),
         children));
 });
 exports.DropdownMenuRadioItem = DropdownMenuRadioItem;
