@@ -1,4 +1,5 @@
-//@ts-nocheck
+// @ts-nocheck
+// https://github.com/MrLightful/shadcn-tree-view
 'use client';
 "use strict";
 var __assign = (this && this.__assign) || function () {
