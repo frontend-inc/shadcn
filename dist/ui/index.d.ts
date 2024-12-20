@@ -45,5 +45,6 @@ export * from './toaster';
 export * from './toggle-group';
 export * from './toggle';
 export * from './tooltip';
+export * from './tree-view';
 export * from './vaul-wrapper';
 export { Toaster as Sonner } from './sonner';

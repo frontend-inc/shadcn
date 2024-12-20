@@ -63,6 +63,7 @@ __exportStar(require("./toaster"), exports);
 __exportStar(require("./toggle-group"), exports);
 __exportStar(require("./toggle"), exports);
 __exportStar(require("./tooltip"), exports);
+__exportStar(require("./tree-view"), exports);
 __exportStar(require("./vaul-wrapper"), exports);
 var sonner_1 = require("./sonner");
 Object.defineProperty(exports, "Sonner", { enumerable: true, get: function () { return sonner_1.Toaster; } });
