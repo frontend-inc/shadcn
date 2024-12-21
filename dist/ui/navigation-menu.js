@@ -74,7 +74,7 @@ var NavigationMenuTrigger = React.forwardRef(function (_a, ref) {
     return (React.createElement(NavigationMenuPrimitive.Trigger, __assign({ ref: ref, className: (0, utils_1.cn)(navigationMenuTriggerStyle(), 'group', className) }, props),
         children,
         ' ',
-        React.createElement(react_icons_1.ChevronDownIcon, { className: "relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180", "aria-hidden": "true" })));
+        React.createElement(react_icons_1.ChevronDownIcon, { className: "relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180 text-foreground", "aria-hidden": "true" })));
 });
 exports.NavigationMenuTrigger = NavigationMenuTrigger;
 NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName;
