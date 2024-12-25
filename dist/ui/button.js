@@ -55,7 +55,7 @@ var buttonVariants = (0, class_variance_authority_1.cva)('inline-flex items-cent
         variant: {
             default: 'bg-primary text-primary-foreground shadow hover:bg-primary/90',
             destructive: 'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
-            outline: 'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
+            outline: 'border border-input bg-background shadow-sm hover:bg-foreground/10 hover:text-foreground',
             secondary: 'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
             ghost: 'text-foreground hover:text-foreground hover:bg-foreground/10',
             link: 'text-primary underline-offset-4 hover:underline',
