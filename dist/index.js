@@ -17,3 +17,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./hooks"), exports);
 __exportStar(require("./lib/utils"), exports);
 __exportStar(require("./ui"), exports);
+__exportStar(require("./magic-ui"), exports);
